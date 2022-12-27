@@ -1,0 +1,10 @@
+{
+	"note": {
+		"type": "SUPPLIERNOTE",
+		"text": "This is a supplier note"
+	},
+	"hardwareName": "WB12345NY",
+	"description": "New description",
+	"macAddress": "00:00:0a:c2:30:fb",
+	"supplierStatus": "1"
+}

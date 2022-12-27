@@ -1,0 +1,40 @@
+{
+	"name": "pob-update-asset-test1",
+	"request": {
+		"headers": {
+			"Authorization": {
+				"equalTo": "xyz"
+			}
+		},
+		"method": "POST",
+		"urlPath": "/pob/configurationitems",
+		"bodyPatterns": [
+			{
+				"equalToJson": {
+					"Type": "ConfigurationItem",
+					"Links": [
+					],
+					"Data": {
+						"Id": "867403",
+						"OptionalNumber": "WB12345NY",
+						"Description": "New description",
+						"Virtual.BluetoothAddress": "00:00:0a:c2:30:fb",
+						"Virtual.LeverantorensStatus": "1"
+					},
+					"Memo": {
+						"CILeverantorensAnteckningar": {
+							"Extension": ".html",
+							"IsValidForWeb": false,
+							"Style": "2",
+							"Memo": "This is a supplier note",
+							"HandleSeparators": true
+						}
+					}
+				}
+			}
+		]
+	},
+	"response": {
+		"status": 200
+	}
+}
